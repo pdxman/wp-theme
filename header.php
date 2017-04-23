@@ -23,15 +23,22 @@
 
 <body <?php body_class(); ?>>
 
-<div id="wrapper">
+<div id="header-wrapper">
 
 	<div id="header">
-	
-		<h1 class="title"><a href="/index.php"><?php bloginfo( 'name' ); ?></a></h1>	
-	
-		<div id="menu"><?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></div>
-	
-		<div style="clear:none;"></div>
 
-	<!--close header-->
+		<h1 class="title"><a href="/index.php"><?php bloginfo( 'name' ); ?></a></h1>
+
+	<!-- close header -->
 	</div>
+<!-- close header-wrapper-->
+</div>
+<div id="menu-wrapper">
+
+	<div id="menu">
+
+		<?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?></div>
+  <!--close menu-->
+	</div>
+<!-- close menu-wrapper-->
+</div>

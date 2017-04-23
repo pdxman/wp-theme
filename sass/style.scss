@@ -8,6 +8,29 @@ Author URI: http://www.crawpdx.com
 @import "compass";
 @import "compass/reset";
 
+/* flickr box */
+
+.images {
+   width: 50px;
+	 height:50px;
+	 float:left;
+	 overflow: hidden;
+	 margin: 5px;
+	 border: black 1px solid;
+	 /*margin: auto;*/
+}
+
+#thumb-box{
+	width: 200px;
+	float: left;
+}
+
+#widget-box{
+	width: 200px;
+	float: left;
+}
+
+
 /*Globals*/
 
 html{
@@ -43,10 +66,12 @@ p{
 
 
 h1.title{
+	max-width: 900px;
+  margin: 0 auto;
 	font-size: 3.5em;
 	font-family: 'Creepster', cursive;
 	padding-top: 60px;
-	padding-bottom: 90px;
+	padding-bottom: 84px;
 	text-shadow: 0.1em 0.1em 0.2em black;
 	/*line-height: 3.0em;*/
 
@@ -63,7 +88,7 @@ h1{
 	font-size: 2em;
 	text-align: left;
 	text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
-
+	margin: 5px 0 5px 0;
 }
 
 h2{
@@ -72,6 +97,11 @@ h2{
 	text-align: left;
 	text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
 
+}
+
+#content{
+	width: 900px;
+	margin: 0 auto;
 }
 
 .post_titles{
@@ -94,8 +124,8 @@ h2{
 /* Page Format */
 
 #wrapper{
-	width: 90%;
-	max-width: 900px;
+	/*width: 90%;
+	max-width: 900px;*/
 	margin: 0 auto;
 	padding-bottom: 30px;
 }
@@ -127,7 +157,7 @@ h2{
 	background-color: #bf090e;
 }
 
-#flickr{
+/*#flickr{
 	width: 285px;
 	height: 265px;
 	float: left;
@@ -137,7 +167,7 @@ h2{
 #flickr img{
 	float: left;
 	width: auto;
-}
+}*/
 
 .tagcloud{
 	width: 300px;
@@ -204,15 +234,23 @@ strong, b {font-weight: bolder !important;}
 
 /* Navigation */
 
-#menu{
+#menu-wrapper{
 	width: 100%;
-	height: 100%;
+	height: 30px;
+	border-bottom: solid black 1px;
+	border-top: solid black 1px;
+	background: #bf090e;
+}
+
+#menu{
+	width: 900px;
+	margin: 0 auto;
 	display: block;
-	float: left;
+	padding-top: 5px;
 }
 
 #menu a{
-	font-family: 'Stint Ultra Expanded', cursive;
+	font-family: 'Creepster', cursive;
 	color: black;
 }
 
