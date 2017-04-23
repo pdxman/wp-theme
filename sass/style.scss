@@ -1,0 +1,336 @@
+/*
+Theme Name: Wordpress Theme
+Version: 1.0
+Author: Crawford Vining
+Author URI: http://www.crawpdx.com
+*/
+
+@import "compass";
+@import "compass/reset";
+
+/*Globals*/
+
+html{
+	background-color: gray;
+
+}
+
+body{
+	background-image:url(http://localhost:8888/wordpress/wp-content/themes/theme/images/header3.jpg);
+	background-repeat: repeat-x;
+
+}
+
+img{
+	width: 100%;
+	max-width: 900px;
+	height: auto;
+}
+
+
+a{
+	color: navy;
+}
+
+a:hover{
+	color:white;
+}
+
+p{
+	font-family: georgia;
+	margin-bottom: 10px;
+}
+
+
+h1.title{
+	font-size: 3.5em;
+	font-family: 'Creepster', cursive;
+	padding-top: 60px;
+	padding-bottom: 90px;
+	text-shadow: 0.1em 0.1em 0.2em black;
+	/*line-height: 3.0em;*/
+
+}
+
+h1.title a{
+	text-decoration: none;
+	color: #bf090e;
+
+}
+
+h1{
+	font-family: 'Creepster', cursive;
+	font-size: 2em;
+	text-align: left;
+	text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+
+}
+
+h2{
+	font-family: 'Creepster', cursive;
+	font-size: 2em;
+	text-align: left;
+	text-shadow: rgba(0,0,0,0.5) -1px 0, rgba(0,0,0,0.3) 0 -1px, rgba(255,255,255,0.5) 0 1px, rgba(0,0,0,0.3) -1px -2px;
+
+}
+
+.post_titles{
+	color: #bf090e;
+	text-decoration:none;
+}
+
+.post_titles:hover{
+	color: black;
+}
+
+.read-more{
+	color: black;
+	font-weight: bold;
+}
+
+
+
+
+/* Page Format */
+
+#wrapper{
+	width: 90%;
+	max-width: 900px;
+	margin: 0 auto;
+	padding-bottom: 30px;
+}
+
+#header{
+
+}
+
+#footer{
+	height: 100%;
+	width: 100%;
+	min-height: 750px;
+	background-color: #bf090e;
+	border-top: 1px solid black;
+}
+
+#footer p{
+	/*font-weight: bold;*/
+	font-size: .9em;
+}
+
+#inner-footer{
+	width: 90%;
+	max-width: 900px;
+	height: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	background-color: #bf090e;
+}
+
+#flickr{
+	width: 285px;
+	height: 265px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+#flickr img{
+	float: left;
+	width: auto;
+}
+
+.tagcloud{
+	width: 300px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+.tagcloud a{
+	color: black;
+}
+
+.tagcloud a:hover{
+	color: gray;
+}
+
+.textwidget{
+	width: 290px;
+	float: left;
+	padding-right: 10px;
+	margin-bottom: 20px;
+}
+
+.wp-pagenavi{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	/*float: right;
+	margin-left: 875px;*/
+
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+text-decoration: none;
+border: 1px solid #bf090e;
+padding: 3px 5px;
+margin: 2px;
+color: black;
+font-size: 20px;
+font-family: 'Creepster', cursive;
+}
+
+.wp-pagenavi span.current{
+	border: 1px solid black;
+	background-color: #bf090e;
+}
+
+.wp-pagenavi span.pages{
+	display: none;
+}
+
+
+/*  wordpress image alignment rules*/
+img.alignright {float:right; margin: 20px 0 1em 1em;}
+img.alignleft {float:left; margin:0 1em 1em 0}
+img.aligncenter {display: block; margin-left: auto; margin-right: auto}
+.alignright {float:right; }
+.alignleft {float:left; }
+.aligncenter {display: block; margin-left: auto; margin-right: auto}
+strong, b {font-weight: bolder !important;}
+/*.attachment-small{
+	width: 125px;
+	height: 125px;
+	float: left;
+	}*/
+
+/* Navigation */
+
+#menu{
+	width: 100%;
+	height: 100%;
+	display: block;
+	float: left;
+}
+
+#menu a{
+	font-family: 'Stint Ultra Expanded', cursive;
+	color: black;
+}
+
+ul#menu-header-menu li{
+	float: left;
+	margin-right: 30px;
+}
+
+
+/* tablet style 1*/
+@media only screen and (max-width: 1000px){
+
+	.textwidget{
+	float: left;
+	width: 100%;
+	}
+
+
+	#flickr{
+	float: left;
+	width: 100%;
+	height: 100%;
+	}
+
+	.tagcloud{
+	float: left;
+	width: 100%;
+	}
+
+	h1.title{
+
+	padding-bottom: 80px;
+	}
+
+
+
+}
+
+/* tablet style 2 */
+@media only screen and (max-width: 880px){
+
+
+
+	h1.title{
+	padding-bottom: 60px;
+	padding-top: 40px;
+	}
+
+
+
+}
+
+/* mobile style */
+@media only screen and (max-width: 480px){
+
+	body{
+		margin-top:-15px;
+	}
+
+	#wrapper{
+		width: 90%;
+
+	}
+
+	p{
+		font-size: 1.2em;
+	}
+
+	ul#menu-header-menu li{
+		float: none;
+		font-size: 1.8em;
+	}
+
+	h1{
+	line-height: 1.0em;
+	margin-top: 15px;
+
+	}
+
+	h1.title{
+	font-size: 2.5em;
+	line-height: 1.0em;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	}
+
+	#menu{
+	width: 100%;
+	float: none;
+	margin-bottom: 15px;
+	}
+
+	#footer p{
+	font-size: 1.2em;
+	}
+
+	#flickr{
+	float: none;
+	}
+
+	.tagcloud{
+	float: none;
+	}
+
+	h2.rounded {
+	margin-top: 20px;
+	}
+	.textwidget{
+	float: none;
+	}
+
+	iframe{
+		width: 100%;
+	}
+
+
+
+
+
+
+}
